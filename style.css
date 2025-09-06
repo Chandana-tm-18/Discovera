@@ -1,0 +1,198 @@
+:root {
+  --bg: #fff6ee;
+  --accent: #ffb47a;
+  --accent-dark: #c77b4b;
+  --text: #4a2c2a;
+  --card: #fff8f4;
+  --muted: #8a6f66;
+  --button: #fff0e3;
+  --button-text: #5b3825;
+}
+
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hidden { display: none; }
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  background: rgba(255, 244, 236, 0.95);
+  border-bottom: 1px solid rgba(120, 85, 72, 0.06);
+  z-index: 100;
+}
+
+.brand-small {
+  font-weight: 700;
+  color: var(--accent-dark);
+  letter-spacing: 1px;
+}
+
+.search-top {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  margin: 0 18px;
+}
+.search-top input {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 22px;
+  border: 1px solid rgba(120, 85, 72, 0.08);
+  outline: none;
+  background: var(--card);
+}
+.icon-btn {
+  border: none;
+  background: var(--button);
+  color: var(--button-text);
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(107, 82, 71, 0.06);
+}
+.icon-btn:hover { transform: translateY(-2px); }
+
+.toggle {
+  font-size: 0.85em;
+}
+
+.home {
+  text-align: center;
+  padding-top: 120px;
+}
+
+.logo-anim span {
+  display: inline-block;
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: var(--accent-dark);
+  opacity: 0;
+  transform: translateY(-40px);
+  animation: drop 0.45s forwards;
+}
+.logo-anim span:nth-child(1) { animation-delay: 0.08s; }
+.logo-anim span:nth-child(2) { animation-delay: 0.18s; }
+.logo-anim span:nth-child(3) { animation-delay: 0.28s; }
+.logo-anim span:nth-child(4) { animation-delay: 0.38s; }
+.logo-anim span:nth-child(5) { animation-delay: 0.48s; }
+.logo-anim span:nth-child(6) { animation-delay: 0.58s; }
+.logo-anim span:nth-child(7) { animation-delay: 0.68s; }
+.logo-anim span:nth-child(8) { animation-delay: 0.78s; }
+.logo-anim span:nth-child(9) { animation-delay: 0.88s; }
+
+@keyframes drop {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.tagline {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.search-box {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  justify-content: center;
+}
+.search-box input {
+  width: 360px;
+  max-width: 88vw;
+  padding: 14px 16px;
+  border-radius: 28px;
+  border: 1px solid rgba(120, 85, 72, 0.06);
+  background: var(--card);
+  box-shadow: 0 8px 28px rgba(120, 85, 72, 0.04);
+  font-size: 1rem;
+  outline: none;
+}
+.btn-light {
+  background: var(--button);
+  border: 1px solid rgba(120, 85, 72, 0.06);
+  color: var(--button-text);
+  padding: 10px 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(107, 82, 71, 0.04);
+  font-weight: 600;
+}
+.btn-light:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(107, 82, 71, 0.07);
+}
+.cta {
+  background: linear-gradient(180deg, var(--accent), var(--accent-dark));
+  color: #fff;
+  border: none;
+  border-radius: 16px;
+  padding: 10px 18px;
+}
+.cta:hover {
+  filter: brightness(0.98);
+  transform: translateY(-2px);
+}
+
+.results {
+  padding: 28px 20px 80px;
+}
+#results {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 980px;
+  margin: 0 auto;
+}
+#results li {
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(120, 85, 72, 0.03);
+  box-shadow: 0 6px 22px rgba(120, 85, 72, 0.03);
+}
+#results a {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.03rem;
+}
+#results small {
+  display: block;
+  color: var(--muted);
+  margin-top: 6px;
+}
+#results p {
+  margin: 8px 0 0;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+.footer {
+  padding: 18px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.9rem;
+  background: transparent;
+}
+body.dark {
+  background: #2b2b2b;
+  color: #eee;
+}
+body.dark header {
+  background: rgba(40, 40, 40, 0.9);
+}
+body.dark .search-box input {
+  background: #333;
+  color: #fff;
+}

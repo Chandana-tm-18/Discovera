@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DISCOVERA</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header id="topBar" class="hidden">
+    <div class="brand-small">DISCOVERA</div>
+    <div class="search-top">
+      <input id="searchInputTop" type="text" placeholder="Search..." autocomplete="off" />
+      <button id="micBtnTop" class="icon-btn" title="Voice search">🎙️</button>
+      <button id="searchBtnTop" class="icon-btn" title="Search">🔎</button>
+    </div>
+    <label class="toggle">
+      <input id="themeToggle" type="checkbox" /> Dark
+    </label>
+  </header>
+
+  <main id="mainPage" class="home">
+    <h1 class="logo-anim">
+      <span>D</span><span>I</span><span>S</span><span>C</span><span>O</span><span>V</span><span>E</span><span>R</span><span>A</span>
+    </h1>
+    <p class="tagline">Search thoughtfully. Find confidently.</p>
+    <div class="search-box">
+      <input id="searchInput" type="text" placeholder="Type or speak your query..." autocomplete="off" />
+      <button id="micBtn" class="btn-light" title="Voice search">🎙️</button>
+      <button id="searchBtn" class="btn-light cta">Search</button>
+    </div>
+  </main>
+
+  <section id="resultsSection" class="hidden results">
+    <ul id="results"></ul>
+  </section>
+
+  <footer class="footer">© 2025 DISCOVERA</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

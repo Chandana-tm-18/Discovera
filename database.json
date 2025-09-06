@@ -1,0 +1,18 @@
+[
+  {
+    "title": "HTML Basics",
+    "description": "Start your web development journey with HTML."
+  },
+  {
+    "title": "CSS Design",
+    "description": "Beautiful, responsive designs using CSS3."
+  },
+  {
+    "title": "JavaScript Intro",
+    "description": "Learn JavaScript with real-world examples."
+  },
+  {
+    "title": "React Guide",
+    "description": "Build fast user interfaces using React.js."
+  }
+]
